@@ -49,11 +49,14 @@
         h1{
             margin-top: 2rem;
             margin-bottom: 1.5rem;
+            color: #8be9fd;     
         }
 
         span{
             display: inline-block;
             font-size: 0.875rem;
+            color: #F7F8FA;
+            font-weight: 500;
 
             & + span{
                 margin-left: 1rem;
@@ -81,10 +84,11 @@
     .description{
         margin-top: 2rem;
         line-height: 1.675rem;
-        color: var(--gray-800);
+        color: var(--gray-200);
 
         p{
             margin: 1.5rem 0;
+
 
         }
     }

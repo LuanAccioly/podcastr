@@ -110,12 +110,16 @@ export default function Home({latestEpisodes, allEpisodes}: HomeProps) {
                           <a href="">{episode.title}</a>
                         </Link>
                       </td>
-                      <td>{episode.members}</td>
+                      <td className={styles.members}>{episode.members}</td>
                       <td style={{width: 100}}>{episode.publishedAt}</td>
                       <td >{episode.durationAsString}</td>
                       <td>
-                        <button type="button" onClick={() => playList(episodeList, index + latestEpisodes.length)}>
-                          <img src="/play-green.svg" alt="Tocar episódio"/>
+                        <button 
+                        type="button" 
+                        onClick={() => playList(episodeList, index + latestEpisodes.length)}
+                        
+                        >
+                          <img src="/play-green.svg" alt="Tocar episódio" className={styles.isHover}/>
                         </button>
                       </td>
                     </tr>
